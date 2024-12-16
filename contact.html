@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Make the page responsive -->
+    <meta name="description" content="High quality makeup products that won't ruin the planet!">
+    <meta name="keywords" content="makeup, eco-friendly, bronzer, eye shadow, tan, tanning">
+    <meta name="author" content="Ailbhe">
+
+<title>Athena Makeup - Contact Us</title>
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Link to Google Font for Business Title Header: Set font parameters in the stylesheet -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet"> 
+
+<!-- Stylesheet settings for responsive menu -->
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333; <!-- Main Menu Bar Colour -->
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #FDEDFD; <!-- Menu Bar Text Colour -->
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #333; <!-- Menu Bar Hover Background -->
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #f599c2; <!-- Menu Bar Home Background -->
+
+  color: pink;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+
+<!-- End of stylesheet settings for responsive menu -->
+
+
+<!-- Script to check all form fields are entered -->
+<script>
+function validateForm() {
+  let x = document.forms["contactForm"]["name"].value;
+  let y = document.forms["contactForm"]["email"].value;
+  let z = document.forms["contactForm"]["message"].value;
+  if (x == "" || y == "" || z == "")  {
+    alert("All fields must be completed.");
+    return false;
+  }
+}
+</script>
+
+</head>
+<body style="background-color: #fad1e3;">
+
+<!-- Set up responsive menu -->
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <a href="products.html">Products</a>
+  <a href="news.html">News</a>
+  <a href="howto.html">How To</a>
+  <a href="contact.html">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<h1> Athena Makeup - Planet Friendly Beauty</h1>
+<h2>Contact Us</h2>
+<p>We’d love to hear from you! Whether you have questions about our products, suggestions for new products, or just want to share your thoughts, we’re here to help. Your feedback and queries mean the world to us and help us continue to create products you love. Get in touch through our contact page, and we’ll get back to you as quickly as possible. Let’s keep the conversation going. At Athena Makeup we’re all about making your beauty experience the best it can be!</p>
+
+<p>One of our sales reps will get back to you within 48 hours.</p>
+
+<form name="contactForm" action="/action_page.php" onsubmit="return validateForm()" method="post"> <!-- This action needs to be adapted to use the backgrounf server form handling options -->
+<p>
+<label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" value=""><br>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" value=""><br>
+  <label for="message">Message:</label><br>
+  <input type="text" id="Message" name="message" value="" size="50"	><br><br>
+  <input type="submit" value="Submit">
+</p>
+</form>
+
+</body>
+</html>

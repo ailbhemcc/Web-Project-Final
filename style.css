@@ -1,0 +1,43 @@
+<!-- External CSS -->
+<style>
+      
+body {
+  background-color: #F5B8DA;
+}
+
+h1 {
+  color: #8c8c8c;
+  text-align: center;
+  margin-left: 20px;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+h2 {
+  color: #8c8c8c;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 20px;
+}
+
+p {
+  color: #000000;
+  font-family: "Times New Roman", Times, serif;
+  margin-left: 20px;
+}
+
+.product_image
+{
+  float: right;}
+
+/* The following markup prevents floating images overlapping - see CSS clearfix hack in W3C Schools */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
